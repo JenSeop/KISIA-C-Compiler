@@ -7,13 +7,13 @@ int lines = 0;
 
 %%
 
-[a-zA-Z]+ { words++; chars += strlen(yytext); }
+[a-zA-Z]+ 		{ words++; chars += strlen(yytext); }
 \n 				{ chars++; lines++; }
 . 				{ chars++; }
 
 %%
 
-main (int argc, chars **argv)
+main (int argc, char **argv)
 {
 	if(argc > 1)
 	{

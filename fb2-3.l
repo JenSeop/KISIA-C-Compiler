@@ -2,9 +2,9 @@
 %x IFILE
 
 %{
-  struct fubstack
+  struct bufstack
   {
-    struct fubstack *prev;
+    struct bufstack *prev;
     YY_BUFFER_STATE bs;
     int lineno;
     char *filename;
@@ -60,7 +60,7 @@ main (int argc, char **argv)
 int newfile(char *fn)
 {
   FILE *f = fopen(fn, "r");
-  struct fubstack *bs = malloc(sizeof(struct bufstack));
+  struct bufstack *bs = malloc(sizeof(struct bufstack));
 
   if(!f)  { perror(fn); return (0); }
   if(!bs) { perror("malloc"); exit(1); }

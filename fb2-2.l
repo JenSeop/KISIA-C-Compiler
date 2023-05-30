@@ -42,7 +42,7 @@ main (int argc, char **argv)
 		fclose(f);
 		printf("%8d%8d%8d %s\n", lines, words, chars, argv[i]);
 		totchars += chars; chars = 0;
-		towords	 += words; words = 0;
+		totwords	 += words; words = 0;
 		totlines += lines; lines = 0;
 	}
 	if(argc > 2)
