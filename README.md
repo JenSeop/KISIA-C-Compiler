@@ -3,7 +3,7 @@ flex and bison 을 활용해 작성한 C Compiler 입니다.<br>
 각 파일에 대한 내용은 다음과 같습니다.
 
 # File-Info
-|No.|Title|Info|
+|No.|Name|Info|
 |------|---|---|
 |01|fb2-1.l|file io in flex scanners|
 |02|fb2-2.l|reading several files|
